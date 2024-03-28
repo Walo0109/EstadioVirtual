@@ -1,0 +1,45 @@
+:root {
+    --verde: rgb(27, 167, 85)
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--verde);
+    border-radius: 30px;
+    margin: 0px 10px 0px 10px;
+    z-index: 10;
+    width: 95%;
+
+
+}
+
+.containerLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+
+
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+}
+
+.logs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+
+}
