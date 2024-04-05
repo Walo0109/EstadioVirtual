@@ -12,6 +12,7 @@
     margin: 0px 10px 0px 10px;
     z-index: 10;
     width: 95%;
+    position: fixed;
 
 
 }
@@ -22,6 +23,7 @@
     align-items: center;
     gap: 50px;
     padding: 10px;
+    height: 300px;
 
 
 }

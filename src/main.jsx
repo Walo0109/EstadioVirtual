@@ -5,6 +5,7 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ContactPage } from './pages/ContactPage.jsx';
 import { HomePage } from './pages/HomePage.jsx';
+import { AdminPage } from './pages/AdminPage.jsx';
 
 
 const router = createBrowserRouter([
@@ -20,7 +21,11 @@ const router = createBrowserRouter([
     path: '/contact',
     element: <ContactPage />,
   },
-  
+  {
+    path: '/admin',
+    element: <AdminPage />,
+  }
+
 
 ]);
 

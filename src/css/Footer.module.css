@@ -1,0 +1,22 @@
+:root {
+    --verde: rgb(27, 167, 85)
+}
+
+
+
+.Footer {
+    background-color: var(--verde);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import logo from './../img/ESTADIO VIRTUAL BCO.png';
 import style from './../css/Navbar.module.css';
 
-
 export const NavBar = () => {
   return (
     <>
@@ -21,7 +20,7 @@ export const NavBar = () => {
             />{' '}
           </Navbar.Brand>
           <Navbar.Toggle className="bg-transparent border-0" />
-          <Navbar.Collapse id="basic-navbar-nav " className=''>
+          <Navbar.Collapse id="basic-navbar-nav " className={style.Collapse}>
             <Nav className={style.containerLink}>
               <Link className={style.link} to="/">INICIO</Link>
               <Link className={style.link} to="/contact">CONTACTO</Link>
@@ -29,14 +28,11 @@ export const NavBar = () => {
             </Nav>
           </Navbar.Collapse>
 
-          <Navbar.Collapse id="basic-navbar-nav " className={style.logs}>
-            <Button>INICIAR SESION</Button>
-            <Button>CREAR CUENTA</Button>
-          </Navbar.Collapse>
-
         </Container>
       </Navbar >
     </>
   );
 };
+
+
 
