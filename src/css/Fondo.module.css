@@ -1,0 +1,28 @@
+.fondo {
+    background-image: url(../img/cerrar-campo-futbol_23-2148930198.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.degradado {
+    background: linear-gradient(rgba(255, 255, 255, 100%), rgba(255, 255, 255, 10%), rgba(255, 255, 255, 0%));
+    background-size: cover;
+    height: 100vh;
+    padding-top: 10px;
+}
+
+.container{
+    
+}
+
+.imput{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
