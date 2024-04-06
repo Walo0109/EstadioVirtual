@@ -9,7 +9,7 @@ const CardsReservas = () => {
 
   const handleAddressClick = (address) => {
     const encodedAddress = encodeURIComponent(address);
-    const newMapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyA33LfMGikQNqFskb8R_XD4tIdBu5g9s0Q&q=${encodedAddress}`;
+    const newMapUrl = `https://www.google.com/maps/embed/v1/place?key=q=${encodedAddress}`;
     setMapUrl(newMapUrl);
   };
   return (
