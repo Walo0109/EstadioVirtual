@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import style from "./../css/buscar.module.css";// Asegúrate de tener el archivo de estilos CSS importado correctamente
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate
+import style from "./../css/buscar.module.css";
 
 export const Buscar = () => {
+  const navigate = useNavigate(); // Llama a useNavigate para obtener la función navigate
   const [searchResults, setSearchResults] = useState([]);
   const [city, setCity] = useState('');
   const [type, setType] = useState('');
@@ -10,12 +12,11 @@ export const Buscar = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // Aquí deberías enviar los parámetros de búsqueda al servidor o API
-    // y actualizar los resultados cuando se reciba la respuesta
-    // Por ahora, simplemente simularemos resultados falsos
-    const fakeResults = ['Cancha 1', 'Cancha 2', 'Cancha 3']; // Simulación de resultados falsos
+    const fakeResults = ['Cancha 1', 'Cancha 2', 'Cancha 3'];
     setSearchResults(fakeResults);
+    navigate('/reserve');
   };
+
 
   return (
     <div className={style.buscarCancha}>

@@ -5,7 +5,7 @@ import style from "./../css/Fondo.module.css";
 export const ContactPage = () => {
   return (
     <>
-      <NavBar />
+    <div className={style.fondo}></div>
     </>
   );
 };

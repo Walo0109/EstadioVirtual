@@ -6,7 +6,7 @@ import { NavBar } from "./../components/Navbar";
 export const AdminPage = () => {
     return (
         <>
-            <NavBar />
+<div>asdasdasd</div>
         </>
     );
 };

@@ -10,14 +10,10 @@ export const HomePage = () => {
     <>
       <div className={style.fondo}>
         <div className={style.degradado}>
-          <NavBar />
           <div >
             <Buscar />
           </div>
         </div>
-
-        <Footer />
-
       </div>
     </>
   )

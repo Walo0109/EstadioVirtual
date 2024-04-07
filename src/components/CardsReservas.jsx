@@ -1,5 +1,5 @@
 
-import { Card, Button, Row, Col, Container } from "react-bootstrap";
+import { Card, Button, Row, Col, Container, Modal } from "react-bootstrap";
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import React, { useState } from 'react';
 import '../css/CardReservas.css';
@@ -12,6 +12,15 @@ const CardsReservas = () => {
     const newMapUrl = `https://www.google.com/maps/embed/v1/place?key=q=${encodedAddress}`;
     setMapUrl(newMapUrl);
   };
+
+  const handleButtonClick = (title, address, time) => {
+    setModalData({ title, address, time });
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => setShowModal(false);
+
+
   return (
     <>
       <Container fluid>
@@ -43,6 +52,7 @@ const CardsReservas = () => {
                         <Col xs={8} className="text-left">
                           <h1>Unico Sport</h1>
                           <h3 className="address-link" onClick={() => handleAddressClick('Avenida Peron 1000')}><FaMapMarkerAlt />Avenida Peron 1000</h3>
+                          
                           <Button variant="primary" className="m-1">
                             20:00
                           </Button>
