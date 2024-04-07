@@ -1,15 +1,10 @@
 import React from "react";
-import { NavBar } from "./../components/Navbar";
-import { Buscar } from "../components/Buscar";
-import style from "./../css/Fondo.module.css";
+import TablaProductos from "../components/AdminComponents/TablaProductos";
 
 export const AdminPage = () => {
   return (
     <>
-          <NavBar />
-          <div >
-          <Buscar />
-          </div>
+    <TablaProductos />
     </>
   );
 };

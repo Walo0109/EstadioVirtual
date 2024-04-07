@@ -10,3 +10,42 @@
     width: 95%;
     height: 500px;
 }
+
+@media (max-width: 768px) {
+    .buscarCancha {
+        top: 50%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+    .form input, .form button {
+        width: 90%;
+        margin: 5px auto;
+    }
+}
